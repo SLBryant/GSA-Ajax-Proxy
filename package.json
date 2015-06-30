@@ -1,0 +1,24 @@
+{
+  "name": "gsa-ajax-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbfranklin/gsa-ajax-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbfranklin/gsa-ajax-proxy/issues"
+  },
+  "homepage": "https://github.com/cbfranklin/gsa-ajax-proxy#readme",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "express": "^4.12.4",
+    "request": "^2.58.0"
+  }
+}
