@@ -9,7 +9,6 @@ var apiUrl = 'http://gsa.gov';
 
 app.use('/', function(req, res) {
     var url = apiUrl + req.url;
-    console.log('request: ', url)
     request({
     	uri: url
     }, function(error, response, html) {
