@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 var request = require('request');
 var cheerio = require('cheerio');
 var express = require('express');
