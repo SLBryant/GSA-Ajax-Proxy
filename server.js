@@ -14,14 +14,15 @@ app.use('/', function(req, res) {
     }, function(error, response, html) {
     	if (!error && response.statusCode == 200) {
     		var $ = cheerio.load(html);
-            var portal = $('#portal').remove('#footer').html();
+            $('#footer').remove();
+            var portal = $('#portal').html();
+            console.log(portal)
         	res.header('Access-Control-Allow-Origin', '*').send(portal);
     	}
     	else{
     		res.header('Access-Control-Allow-Origin', '*').status(404).send('404');
     	}
     })
-
 });
 
 app.listen(process.env.PORT || 3333);
