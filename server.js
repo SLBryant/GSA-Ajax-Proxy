@@ -14,8 +14,8 @@ app.use('/', function(req, res) {
     }, function(error, response, html) {
     	if (!error && response.statusCode == 200) {
     		var $ = cheerio.load(html);
-            var pageLayout = $('#pageLayout').html();
-        	res.header('Access-Control-Allow-Origin', '*').send(pageLayout);
+            var portal = $('#portal').html();
+        	res.header('Access-Control-Allow-Origin', '*').send(portal);
     	}
     	else{
     		res.header('Access-Control-Allow-Origin', '*').status(404).send('404');
